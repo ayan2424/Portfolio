@@ -1,2 +1,2 @@
-This is my first project of portfolio which is created by HTML/CSS
+This is my first project of portfolio which is created with HTML/CSS
 # Portfolio
