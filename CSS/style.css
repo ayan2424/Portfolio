@@ -259,3 +259,14 @@ header .navbar{
         display: none;
     }
  }
+ @media (max-width: 640px) {
+    .offCanvasNavigation{
+        display: flex;
+    }
+    .offCanvasNavigation img{
+        width: 35px;
+    }
+    .headerSection header .navbar .navigationLinks{
+        display: none;
+    }
+ }
