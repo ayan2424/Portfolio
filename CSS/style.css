@@ -262,6 +262,7 @@ header .navbar{
  @media (max-width: 640px) {
     .offCanvasNavigation{
         display: flex;
+        justify-self: end;
     }
     .offCanvasNavigation img{
         width: 35px;
