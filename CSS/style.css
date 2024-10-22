@@ -5,18 +5,32 @@
     margin: 0px;
     font-family: "Poppins", sans-serif;
 }
-header {
+.responsiveKit{
+    width: 100%;
+    max-width: 1536px;
+}
+/* ------Default Styling------ */
+.headerSection {
     width: 100%;
     height: 5rem;
     display: flex;
     background-color: black;
     justify-content: center;
     align-items: center;
+} 
+header {
+    width: 100%;
+    padding: 0 35px 0 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 header .navbar{
-    width: 85%;
+    width: 90%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .headerSection header .navbar .logoContainer{
     display: flex;
@@ -25,8 +39,8 @@ header .navbar{
 }
 .headerSection header .navbar .logoContainer a{
     color: red;
-    font-size: 40px;
-    font-weight: 700;
+    font-size: 50px;
+    font-weight: 600;
     text-decoration: none;
     cursor: pointer;
 }
@@ -38,13 +52,14 @@ header .navbar{
 .headerSection header .navbar .navigationLinks ul{
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 40px;
+    justify-content: end;
+    gap: 55px;
 }
 .headerSection header .navbar .navigationLinks ul li{
+    width: min-content;
     color: white;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
     display: flex;
     list-style: none;
@@ -52,3 +67,195 @@ header .navbar{
 .headerSection header .navbar .navigationLinks ul li:hover{
     color: red;
 }
+/* ------Styling for sm width screen------ */
+@media (min-width: 640px) { 
+    .headerSection {
+        width: 100%;
+        height: 6rem;
+        display: flex;
+        background-color: black;
+        justify-content: center;
+        align-items: center;
+    } 
+    header {
+        width: 100%;
+        padding: 0 35px 0 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+    header .navbar{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .headerSection header .navbar .navigationLinks{
+        display: none;
+    }
+    .offCanvasNavigation{
+        width: min-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .offCanvasNavigation img{
+        width: 35px;
+    }
+ }
+/* ------Styling for md width screen------ */
+@media (min-width: 768px) { 
+    .headerSection {
+        width: 100%;
+        height: 6rem;
+        display: flex;
+        background-color: black;
+        justify-content: center;
+        align-items: center;
+    } 
+    header {
+        width: 100%;
+        padding: 0 35px 0 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+    header .navbar{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .headerSection header .navbar .navigationLinks{
+        display: none;
+    }
+    .offCanvasNavigation{
+        width: min-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .offCanvasNavigation img{
+        width: 35px;
+    }
+ }
+/* ------Styling for lg width screen------ */
+@media (min-width: 1024px) { 
+    .headerSection {
+        width: 100%;
+        height: 6rem;
+        display: flex;
+        background-color: black;
+        justify-content: center;
+        align-items: center;
+    } 
+    header {
+        width: 100%;
+        padding: 0 35px 0 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+    header .navbar{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .headerSection header .navbar .navigationLinks{
+        display: flex;
+    }
+    .headerSection header .navbar .navigationLinks ul{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 40px;
+    }
+    .headerSection header .navbar .navigationLinks ul li{
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .offCanvasNavigation{
+        display: none;
+    }
+ }
+/* ------Styling for xl width screen------ */
+@media (min-width: 1280px) { 
+    .headerSection {
+        width: 100%;
+        height: 5rem;
+        display: flex;
+        background-color: black;
+        justify-content: center;
+        align-items: center;
+    } 
+    header {
+        width: 100%;
+        padding: 0 35px 0 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+    header .navbar{
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .headerSection header .navbar .navigationLinks{
+        display: flex;
+    }
+    .headerSection header .navbar .navigationLinks ul{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 50px;
+    }
+    .headerSection header .navbar .navigationLinks ul li{
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .offCanvasNavigation{
+        display: none;
+    }
+ }
+/* ------Styling for 2xl width screen------ */
+@media (min-width: 1536px) {
+    .headerSection {
+        width: 100%;
+        height: 6rem;
+        display: flex;
+        background-color: black;
+        justify-content: center;
+        align-items: center;
+    } 
+    header {
+        width: 100%;
+        padding: 0 35px 0 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+    header .navbar{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .headerSection header .navbar .navigationLinks{
+        display: flex;
+    }
+    .headerSection header .navbar .navigationLinks ul{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 50px;
+    }
+    .headerSection header .navbar .navigationLinks ul li{
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .offCanvasNavigation{
+        display: none;
+    }
+ }
