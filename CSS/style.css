@@ -96,7 +96,8 @@ header .navbar{
     .offCanvasNavigation{
         width: min-content;
         display: flex;
-        justify-content: center;
+        justify-self: end;
+        justify-content: end;
         align-items: center;
     }
     .offCanvasNavigation img{
@@ -132,7 +133,8 @@ header .navbar{
     .offCanvasNavigation{
         width: min-content;
         display: flex;
-        justify-content: center;
+        justify-self: end;
+        justify-content: end;
         align-items: center;
     }
     .offCanvasNavigation img{
