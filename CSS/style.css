@@ -112,8 +112,8 @@ header .navbar {
     .offCanvasNavigation {
         width: min-content;
         display: flex;
-        flex-direction: row;
         justify-content: flex-end;
+        justify-self: end;
         align-items: center;
     }
 
@@ -156,8 +156,8 @@ header .navbar {
     .offCanvasNavigation {
         width: min-content;
         display: flex;
-        flex-direction: row;
         justify-content: flex-end;
+        justify-self: end;
         align-items: center;
     }
 
@@ -310,9 +310,7 @@ header .navbar {
 @media (max-width: 640px) {
     header .navbar {
         width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+
     }
     .offCanvasNavigation {
         display: flex;
@@ -320,13 +318,13 @@ header .navbar {
         flex-direction: row;
         justify-content: flex-end;
         align-items: center;
-}
+    }
 
-.offCanvasNavigation img {
+    .offCanvasNavigation img {
     width: 35px;
-}
+    }
 
-.headerSection header .navbar .navigationLinks {
+    .headerSection header .navbar .navigationLinks {
     display: none;
-}
+    }
 }
