@@ -1,14 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
+
+* {
     width: 100%;
     padding: 0px;
     margin: 0px;
     font-family: "Poppins", sans-serif;
 }
-.responsiveKit{
+
+.responsiveKit {
     width: 100%;
     max-width: 1536px;
 }
+
 /* ------Default Styling------ */
 .headerSection {
     width: 100%;
@@ -17,45 +20,52 @@
     background-color: black;
     justify-content: center;
     align-items: center;
-} 
+}
+
 header {
     width: 100%;
     padding: 0 35px 0 35px;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
-header .navbar{
+
+header .navbar {
     width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.headerSection header .navbar .logoContainer{
+
+.headerSection header .navbar .logoContainer {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.headerSection header .navbar .logoContainer a{
+
+.headerSection header .navbar .logoContainer a {
     color: red;
     font-size: 50px;
     font-weight: 600;
     text-decoration: none;
     cursor: pointer;
 }
-.headerSection header .navbar .navigationLinks{
+
+.headerSection header .navbar .navigationLinks {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.headerSection header .navbar .navigationLinks ul{
+
+.headerSection header .navbar .navigationLinks ul {
     display: flex;
     align-items: center;
     justify-content: end;
     gap: 55px;
 }
-.headerSection header .navbar .navigationLinks ul li{
+
+.headerSection header .navbar .navigationLinks ul li {
     width: min-content;
     color: white;
     cursor: pointer;
@@ -64,11 +74,13 @@ header .navbar{
     display: flex;
     list-style: none;
 }
-.headerSection header .navbar .navigationLinks ul li:hover{
+
+.headerSection header .navbar .navigationLinks ul li:hover {
     color: red;
 }
+
 /* ------Styling for sm width screen------ */
-@media (min-width: 640px) { 
+@media (min-width: 640px) {
     .headerSection {
         width: 100%;
         height: 6rem;
@@ -76,35 +88,43 @@ header .navbar{
         background-color: black;
         justify-content: center;
         align-items: center;
-    } 
+    }
+
     header {
         width: 100%;
         padding: 0 35px 0 35px;
         display: flex;
         justify-content: center;
-        align-items: center; 
+        align-items: center;
     }
-    header .navbar{
+
+    header .navbar {
         width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    .headerSection header .navbar .navigationLinks{
+
+    .headerSection header .navbar .navigationLinks {
         display: none;
     }
-    .offCanvasNavigation{
+
+    .offCanvasNavigation {
         width: min-content;
         display: flex;
-        justify-content: center;
+        flex-direction: row;
+        justify-content: flex-end;
         align-items: center;
     }
-    .offCanvasNavigation img{
+
+    .offCanvasNavigation img {
         width: 35px;
+        justify-self: end;
     }
- }
+}
+
 /* ------Styling for md width screen------ */
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
     .headerSection {
         width: 100%;
         height: 6rem;
@@ -112,35 +132,42 @@ header .navbar{
         background-color: black;
         justify-content: center;
         align-items: center;
-    } 
+    }
+
     header {
         width: 100%;
         padding: 0 35px 0 35px;
         display: flex;
         justify-content: center;
-        align-items: center; 
+        align-items: center;
     }
-    header .navbar{
+
+    header .navbar {
         width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    .headerSection header .navbar .navigationLinks{
+
+    .headerSection header .navbar .navigationLinks {
         display: none;
     }
-    .offCanvasNavigation{
+
+    .offCanvasNavigation {
         width: min-content;
         display: flex;
-        justify-content: center;
+        flex-direction: row;
+        justify-content: flex-end;
         align-items: center;
     }
-    .offCanvasNavigation img{
+
+    .offCanvasNavigation img {
         width: 35px;
     }
- }
+}
+
 /* ------Styling for lg width screen------ */
-@media (min-width: 1024px) { 
+@media (min-width: 1024px) {
     .headerSection {
         width: 100%;
         height: 6rem;
@@ -148,39 +175,46 @@ header .navbar{
         background-color: black;
         justify-content: center;
         align-items: center;
-    } 
+    }
+
     header {
         width: 100%;
         padding: 0 35px 0 35px;
         display: flex;
         justify-content: center;
-        align-items: center; 
+        align-items: center;
     }
-    header .navbar{
+
+    header .navbar {
         width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    .headerSection header .navbar .navigationLinks{
+
+    .headerSection header .navbar .navigationLinks {
         display: flex;
     }
-    .headerSection header .navbar .navigationLinks ul{
+
+    .headerSection header .navbar .navigationLinks ul {
         display: flex;
         align-items: center;
         justify-content: end;
         gap: 40px;
     }
-    .headerSection header .navbar .navigationLinks ul li{
+
+    .headerSection header .navbar .navigationLinks ul li {
         font-size: 18px;
         font-weight: 500;
     }
-    .offCanvasNavigation{
+
+    .offCanvasNavigation {
         display: none;
     }
- }
+}
+
 /* ------Styling for xl width screen------ */
-@media (min-width: 1280px) { 
+@media (min-width: 1280px) {
     .headerSection {
         width: 100%;
         height: 5rem;
@@ -188,37 +222,44 @@ header .navbar{
         background-color: black;
         justify-content: center;
         align-items: center;
-    } 
+    }
+
     header {
         width: 100%;
         padding: 0 35px 0 35px;
         display: flex;
         justify-content: center;
-        align-items: center; 
+        align-items: center;
     }
-    header .navbar{
+
+    header .navbar {
         width: 95%;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    .headerSection header .navbar .navigationLinks{
+
+    .headerSection header .navbar .navigationLinks {
         display: flex;
     }
-    .headerSection header .navbar .navigationLinks ul{
+
+    .headerSection header .navbar .navigationLinks ul {
         display: flex;
         align-items: center;
         justify-content: end;
         gap: 50px;
     }
-    .headerSection header .navbar .navigationLinks ul li{
+
+    .headerSection header .navbar .navigationLinks ul li {
         font-size: 16px;
         font-weight: 500;
     }
-    .offCanvasNavigation{
+
+    .offCanvasNavigation {
         display: none;
     }
- }
+}
+
 /* ------Styling for 2xl width screen------ */
 @media (min-width: 1536px) {
     .headerSection {
@@ -228,45 +269,64 @@ header .navbar{
         background-color: black;
         justify-content: center;
         align-items: center;
-    } 
+    }
+
     header {
         width: 100%;
         padding: 0 35px 0 35px;
         display: flex;
         justify-content: center;
-        align-items: center; 
+        align-items: center;
     }
-    header .navbar{
+
+    header .navbar {
         width: 90%;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    .headerSection header .navbar .navigationLinks{
+
+    .headerSection header .navbar .navigationLinks {
         display: flex;
     }
-    .headerSection header .navbar .navigationLinks ul{
+
+    .headerSection header .navbar .navigationLinks ul {
         display: flex;
         align-items: center;
         justify-content: end;
         gap: 50px;
     }
-    .headerSection header .navbar .navigationLinks ul li{
+
+    .headerSection header .navbar .navigationLinks ul li {
         font-size: 18px;
         font-weight: 500;
     }
-    .offCanvasNavigation{
+
+    .offCanvasNavigation {
         display: none;
     }
- }
- @media (max-width: 640px) {
-    .offCanvasNavigation{
+}
+
+@media (max-width: 640px) {
+    header .navbar {
+        width: 100%;
         display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
-    .offCanvasNavigation img{
-        width: 35px;
-    }
-    .headerSection header .navbar .navigationLinks{
-        display: none;
-    }
- }
+    .offCanvasNavigation {
+        display: flex;
+        width: min-content;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+}
+
+.offCanvasNavigation img {
+    width: 35px;
+}
+
+.headerSection header .navbar .navigationLinks {
+    display: none;
+}
+}
