@@ -6,6 +6,9 @@
     margin: 0px;
     font-family: "Poppins", sans-serif;
 }
+.responsive{
+    max-width: 1600px;
+}
 .headerSection{
     width: 100%;
     display: flex;
