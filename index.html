@@ -11,29 +11,40 @@
 </head>
 
 <body>
-   <section class="headerSection">
-      <header class="responsiveKit">
+
+      <header class="headerSection">
          <nav class="navbar">
             <div class="logoContainer">
                <h1><a href="#">Alex</a></h1>
             </div>
+
             <div class="navigationLinks">
                <ul>
-                  <li>Home</li>
-                  <li>Services</li>
-                  <li>Skills</li>
-                  <li>Education</li>
-                  <li>Experience</li>
-                  <li>Contact</li>
+                  <li><a href="">Home</a></li>
+                  <li><a href="">Services</a></li>
+                  <li><a href="">Skills</a></li>
+                  <li><a href="">Education</a></li>
+                  <li><a href="">Experience</a></li>
+                  <li><a href="">Contact</a></li>
                </ul>
             </div>
-            <div class="offCanvasNavigation">
+            <div id="mainMenu" class="offCanvasNavigation">
+               <ul>
+                  <li><a href="">Home</a></li>
+                  <li><a href="">Services</a></li>
+                  <li><a href="">Skills</a></li>
+                  <li><a href="">Education</a></li>
+                  <li><a href="">Experience</a></li>
+                  <li><a href="">Contact</a></li>
+               </ul>
+            </div>
+            <div id="barIcon" class="offCanvasNavigationBar" onclick="menuToggle()">
                <img src="./IMAGE/menu-bar.png" alt="">
             </div>
          </nav>
       </header>
-   </section>
 
+      <script src="./JS/script.js"></script>
 </body>
 
 </html>
