@@ -54,15 +54,24 @@
     font-size: 16px;
     font-weight: 400;
     list-style: none;
+    
 }
 .headerSection .navbar .navigationLinks ul li a{
     cursor: pointer;
     color: white;
     text-decoration: none;
 }
+.headerSection .navbar .navigationLinks ul li a:active{
+    border-bottom: 3px solid red;
+}
+.headerSection .navbar .navigationLinks ul li .active{
+    color: red;
+    border-bottom: 3px solid red;
+}
 .headerSection .navbar .navigationLinks ul li a:hover{
     cursor: pointer;
     color: red;
+    border-bottom: 3px solid red;
 }
 .headerSection .navbar .offCanvasNavigationBar{
     width: 40px;
@@ -103,6 +112,35 @@
     cursor: pointer;
     color: red;
 }
+
+.heroSection{
+    height: calc(100vh - 5rem);
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+.heroSection .heroContainer{
+    width: 100%;
+    display: flex;
+}
+.heroSection .heroContainer .rightContainer{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.heroSection .heroContainer .rightContainer img{
+    border-radius: 50%;
+    width: 33vw;
+}
+.heroSection .heroContainer .leftConatiner{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* ------Styling for sm width screen------ */
 @media (min-width: 640px) {
     
