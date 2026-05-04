@@ -1,69 +1,292 @@
-<!-- 
-Author: Muhammad Ayan Shamim
-Publishing Date: 11-November-2024
-LICENSE: GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007
-Description: this a Home page file of portfolio website.
--->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta name="google-site-verification" content="94NH6pmBkVNc2MlxWKj8vFl9sjHH_6IYiE8dUKLGcFs" />
-   <meta name="description" content="Explore a professional portfolio showcasing Ayan's expertise in Web Develpment.">
-   <title>Portfolio By Ayan</title>
-   <link rel="stylesheet" href="./CSS/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayan — Ultra Premium Portfolio</title>
+    <meta name="description" content="Ayan is a WordPress & Frontend Developer specializing in ultra-premium interactive web experiences.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Assuming icomoon is available. If not, standard SVGs could be used -->
+    <link rel="stylesheet" href="assets/icons/icomoon/style.css">
+    <link rel="stylesheet" href="assets/css/vertical-premium.css">
 </head>
-
 <body>
-   <!-- Header Section -->
-      <header class="headerSection">
-         <nav class="navbar responsive">
-            <div class="logoContainer">
-               <h1><a href="#">Alex</a></h1>
-            </div>
 
-            <div class="navigationLinks">
-               <ul>
-                  <li><a class="active">Home</a></li>
-                  <li><a href="">Services</a></li>
-                  <li><a href="">Skills</a></li>
-                  <li><a href="">Education</a></li>
-                  <li><a href="">Experience</a></li>
-                  <li><a href="">Contact</a></li>
-               </ul>
-            </div>
-            <div id="mainMenu" class="offCanvasNavigation">
-               <ul>
-                  <li><a class="active" href="">Home</a></li>
-                  <li><a href="">Services</a></li>
-                  <li><a href="">Skills</a></li>
-                  <li><a href="">Education</a></li>
-                  <li><a href="">Experience</a></li>
-                  <li><a href="">Contact</a></li>
-               </ul>
-            </div>
-            <div id="barIcon" class="offCanvasNavigationBar" onclick="menuToggle()">
-               <img src="./IMAGE/menu-bar.png" alt="">
-            </div>
-         </nav>
-      </header>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
 
+    <!-- Preloader -->
+    <div class="preloader">
+        <h1 class="text-gradient">AYAN.</h1>
+    </div>
 
-      <section class="heroSection">
-         <div class="heroContainer">
-            <div class="rightContainer">
-               <img src="./IMAGE/main.jpg" alt="Hero-Image">
-            </div>
-            <div class="leftConatiner">
-               
-            </div>
-         </div>
-      </section>
+    <!-- Mobile Header -->
+    <div class="mobile-header">
+        <h2 class="text-gradient" style="margin:0; font-size: 1.5rem;">AYAN.</h2>
+        <div class="menu-toggle" style="cursor: pointer;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </div>
+    </div>
 
-   <!-- scripting start -->
-      <script src="./JS/script.js"></script>
+    <main class="layout-vertical">
+        
+        <!-- Left Sidebar (Fixed Profile) -->
+        <aside class="sidebar">
+            <div class="sidebar-avatar">
+                <!-- Using a placeholder avatar, replace with your actual image path -->
+                <img src="assets/images/user/avatar.webp" alt="Ayan">
+            </div>
+            <h1 class="sidebar-name">Ayan</h1>
+            <div class="sidebar-role">WordPress & UI Developer</div>
+            <a href="mailto:hello@ayan.dev" class="sidebar-email">hello@ayan.dev</a>
+            <div class="sidebar-location">Based in Pakistan, Remote Worldwide</div>
+            
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="icon-LinkedIn"></i></a>
+                <a href="#" class="social-link"><i class="icon-GitHub"></i></a>
+                <a href="#" class="social-link"><i class="icon-X"></i></a>
+                <a href="#" class="social-link"><i class="icon-dribbble"></i></a>
+            </div>
+            
+            <div class="sidebar-actions">
+                <a href="#" target="_blank" class="btn btn-outline">
+                    <i class="icon-ReadCvLogo"></i> View My CV
+                </a>
+                <a href="#contact" class="btn btn-primary">
+                    <i class="icon-EnvelopeSimple"></i> Contact Me
+                </a>
+            </div>
+        </aside>
+
+        <!-- Right Side Scrolling Content -->
+        <div class="content-wrapper">
+            
+            <!-- About Section -->
+            <section id="about">
+                <span class="subtitle">About</span>
+                <h2 style="font-size: 3.5rem; margin-bottom: 2rem;">Empower <span class="text-gradient">Digital Experiences</span></h2>
+                <p class="about-text">Hello! I'm Ayan, a WordPress & Frontend Developer with 7+ years of experience in designing and developing premium web systems. My expertise spans custom WordPress themes, WooCommerce, Vanilla JavaScript, and GSAP animations. Driven by creativity, I transform complex requirements into buttery-smooth, interactive solutions.</p>
+                
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-num">7<span>+</span></div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-num">100<span>+</span></div>
+                        <div class="stat-label">Satisfied Clients</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-num">150<span>+</span></div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills">
+                <span class="subtitle">Expertise</span>
+                <h2 style="margin-bottom: 2rem;">Tools & <span class="text-gradient">Technologies</span></h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">🚀</div>
+                        <div class="skill-name">WordPress</div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">✨</div>
+                        <div class="skill-name">GSAP</div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">⚡</div>
+                        <div class="skill-name">JavaScript</div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">🎨</div>
+                        <div class="skill-name">CSS3</div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">🛒</div>
+                        <div class="skill-name">WooCommerce</div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">🐘</div>
+                        <div class="skill-name">PHP</div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">💾</div>
+                        <div class="skill-name">MySQL</div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">🔧</div>
+                        <div class="skill-name">Git</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Services Section -->
+            <section id="services">
+                <span class="subtitle">Services</span>
+                <h2 style="margin-bottom: 2rem;">Digital <span class="text-gradient">Solutions</span></h2>
+                
+                <div class="service-list">
+                    <a href="#contact" class="service-item">
+                        <div class="service-title">
+                            <span class="service-num">01/</span>
+                            <h3>Custom WordPress Development</h3>
+                        </div>
+                        <div class="service-arrow"><i class="icon-ArrowRight"></i></div>
+                    </a>
+                    <a href="#contact" class="service-item">
+                        <div class="service-title">
+                            <span class="service-num">02/</span>
+                            <h3>WooCommerce Optimization</h3>
+                        </div>
+                        <div class="service-arrow"><i class="icon-ArrowRight"></i></div>
+                    </a>
+                    <a href="#contact" class="service-item">
+                        <div class="service-title">
+                            <span class="service-num">03/</span>
+                            <h3>Frontend Animation Systems</h3>
+                        </div>
+                        <div class="service-arrow"><i class="icon-ArrowRight"></i></div>
+                    </a>
+                    <a href="#contact" class="service-item">
+                        <div class="service-title">
+                            <span class="service-num">04/</span>
+                            <h3>Performance & SEO Audits</h3>
+                        </div>
+                        <div class="service-arrow"><i class="icon-ArrowRight"></i></div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Portfolio Section (STATIC NOW) -->
+            <section id="portfolio">
+                <span class="subtitle">Portfolio</span>
+                <h2 style="margin-bottom: 2rem;">Featured <span class="text-gradient">Projects</span></h2>
+                
+                <div id="portfolio-grid" class="portfolio-grid">
+                    <!-- Project 1 -->
+                    <div class="portfolio-item">
+                        <div class="portfolio-img">
+                            <img src="assets/images/user/portfolio-item-1.webp" alt="Project 1">
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-tag">WordPress Core</div>
+                            <h3 class="portfolio-title">Custom Theme Architecture</h3>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="portfolio-item">
+                        <div class="portfolio-img">
+                            <img src="assets/images/user/portfolio-item-2.webp" alt="Project 2">
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-tag">GSAP & Canvas</div>
+                            <h3 class="portfolio-title">Interactive Agency Website</h3>
+                        </div>
+                    </div>
+                    <!-- Project 3 -->
+                    <div class="portfolio-item">
+                        <div class="portfolio-img">
+                            <img src="assets/images/user/portfolio-item-3.webp" alt="Project 3">
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-tag">WooCommerce</div>
+                            <h3 class="portfolio-title">High-Conversion Storefront</h3>
+                        </div>
+                    </div>
+                    <!-- Project 4 -->
+                    <div class="portfolio-item">
+                        <div class="portfolio-img">
+                            <img src="assets/images/user/portfolio-item-4.webp" alt="Project 4">
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-tag">Web Application</div>
+                            <h3 class="portfolio-title">SaaS Dashboard UI</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section (STATIC NOW) -->
+            <section id="contact">
+                <span class="subtitle">Contact</span>
+                <h2 style="margin-bottom: 2rem;">Let's Work <span class="text-gradient">Together</span></h2>
+                
+                <div class="contact-container">
+                    <!-- Form using Web3Forms (100% Free, No PHP Required) -->
+                    <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                        
+                        <!-- Web3Forms Access Key -->
+                        <input type="hidden" name="access_key" value="dae958fe-0d05-4abd-ba14-9008d904f397">
+                        
+                        <div class="form-group">
+                            <input type="text" name="name" id="name" class="form-control" placeholder=" " required>
+                            <label for="name" class="form-label">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" id="email" class="form-control" placeholder=" " required>
+                            <label for="email" class="form-label">Email Address</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" id="subject" class="form-control" placeholder=" " required>
+                            <label for="subject" class="form-label">Subject</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" id="message" class="form-control" placeholder=" " rows="4" required></textarea>
+                            <label for="message" class="form-label">Project Details</label>
+                        </div>
+                        
+                        <!-- Anti-Spam protection -->
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                        
+                        <button type="submit" class="btn btn-primary" style="width: 100%; border-radius: 12px; font-size: 1.1rem; padding: 18px;">
+                            Send Message
+                        </button>
+                        <div id="formStatus" class="form-status"></div>
+                    </form>
+                </div>
+            </section>
+            
+        </div>
+        
+    </main>
+
+    <!-- Right Fixed Navigation Menu -->
+    <div class="nav-menu-vertical">
+        <a href="#about" class="nav-dot active">
+            <i class="icon-User"></i>
+            <span class="tooltip">About</span>
+        </a>
+        <a href="#skills" class="nav-dot">
+            <i class="icon-GearFine"></i>
+            <span class="tooltip">Skills</span>
+        </a>
+        <a href="#services" class="nav-dot">
+            <i class="icon-Briefcase"></i>
+            <span class="tooltip">Services</span>
+        </a>
+        <a href="#portfolio" class="nav-dot">
+            <i class="icon-Image"></i>
+            <span class="tooltip">Portfolio</span>
+        </a>
+        <a href="#contact" class="nav-dot">
+            <i class="icon-PaperPlaneTilt"></i>
+            <span class="tooltip">Contact</span>
+        </a>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script>
+    
+    <script src="assets/js/app.js"></script>
 </body>
-
 </html>
